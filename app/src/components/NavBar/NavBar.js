@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import CardWidget from '../CardWidget/CardWidget'
-import LogoA from '../images/doula_amatista_Logo_biar0y.png'
+import LogoA from '../../images/doula_amatista_Logo_biar0y.png'
 import '../../styles/NavBar.css'
 
 const NavBar = () => {
@@ -8,17 +9,20 @@ const NavBar = () => {
 <header>
         <nav class="container-wid navbar">
             <picture class="logo">
+                <Link to='/'>
                 <img 
                 className='logo__img'
                 src={LogoA} 
                 Alt='Logo DoulaMatista'/>
-                </picture>
+                </Link>
+            </picture>
+
             <ul class="menu">
             <li class="menu__item">
-                    <a href="/#">Servicios</a>
+            <Link to='/categoria/Asesoramiento'>Asesoramiento</Link>
                 </li>
                 <li class="menu__item">
-                    <a href="/#">Productos</a>
+                    <Link to='/categoria/Acompañamiento'>Acompañamiento</Link>
                 </li>
                 <li class="menu__item">
                     <a href="/#">Sobre Mi</a>
@@ -27,9 +31,7 @@ const NavBar = () => {
                     <a href="/#">Contacto</a>
                 </li>
                 <li>
-                    <a href="/#">
                         <CardWidget/> 
-                    </a>
                 </li>
             </ul>
         </nav>

@@ -21,7 +21,7 @@ header .menu {
     flex-direction: row;
     justify-content: space-between;
     flex-basis: 40%;
-    font-size: 1.6em;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;
 }
